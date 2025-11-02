@@ -122,12 +122,12 @@
     <i>Clique sobre as arestas para visualizar as publicações dos pares de pesquisadores.</i>
   </div>
 
-  <div id="publicationsDialog" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2000; background: white; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.3); max-width: 80%; max-height: 80%; overflow: hidden; font-family: Arial, sans-serif;">
+  <div id="publicationsDialog" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2000; background: white; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.3); max-width: 80%; max-height: 80%; font-family: Arial, sans-serif; flex-direction: column;">
     <div style="padding: 20px; border-bottom: 1px solid #ddd; background: #f5f5f5;">
       <h3 id="dialogTitle" style="margin: 0; color: #333;">Publicações</h3>
       <button id="closeDialog" style="position: absolute; top: 15px; right: 15px; background: none; border: none; font-size: 24px; cursor: pointer; color: #666;">&times;</button>
     </div>
-    <div id="dialogContent" style="padding: 20px; max-height: 500px; overflow-y: auto;">
+    <div id="dialogContent" style="padding: 20px; overflow-y: auto; flex: 1;">
       <div id="collaborationInfo" style="margin-bottom: 15px; padding: 10px; background: #f9f9f9; border-radius: 5px;">
         <strong>Pesquisadores:</strong> <span id="authorNames"></span><br>
         <strong>Termos de busca:</strong> <span id="searchTerms"></span><br><br>
@@ -461,7 +461,9 @@
 
       // Show dialog
       overlay.style.display = 'block';
-      dialog.style.display = 'block';
+      
+      // ****** MUDANÇA 3 AQUI (trocado 'block' por 'flex') ******
+      dialog.style.display = 'flex';
     }
 
     function hidePublicationsDialog() {
