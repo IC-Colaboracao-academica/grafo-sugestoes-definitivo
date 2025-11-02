@@ -31,7 +31,7 @@ const nodeList = [
     { name: "William Rosseti", options: {size: 13.856406460551018, label: "William Rosseti", color: '#cc9999', labelColor: '#cc9999'} },
     { name: "Renato Cristiano Montanher", options: {size: 17.88854381999832, label: "Renato Cristiano Montanher", color: '#ffccff', labelColor: '#ffccff'} },
     { name: "Ana Marcia Lima Costa", options: {size: 11.313708498984761, label: "Ana Marcia Lima Costa", color: '#00cc99', labelColor: '#00cc99'} },
-    { name: "Marcelo Cizaurre Guirau", options: {size: 8.0, label: "Marcelo Cizaurre Guirau", color: '#999933', labelColor: '#999933'} },
+    // { name: "Marcelo Cizaurre Guirau", options: {size: 8.0, label: "Marcelo Cizaurre Guirau", color: '#999933', labelColor: '#999933'} },
     // { name: "Roberta Caetano Fleira", options: {size: 11.313708498984761, label: "Roberta Caetano Fleira", color: '#339966', labelColor: '#339966'} },
     { name: "Ricardo Normanha Ribeiro de Almeida", options: {size: 8.0, label: "Ricardo Normanha Ribeiro de Almeida", color: '#0033ff', labelColor: '#0033ff'} },
     { name: "Ana Paula Rodrigues Magalhães de Barros", options: {size: 16.0, label: "Ana Paula Rodrigues Magalhães de Barros", color: '#339966', labelColor: '#339966'} }
